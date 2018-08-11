@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <title>Online Billing Software</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" id="theme" href="css/jquery.mCustomScrollbar.css"/>
+        <link rel="stylesheet" type="text/css" id="theme" href="css/style.css"/>  
+
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery.mCustomScrollbar.js"></script>
+        <script src="js/jquery-ui.js"></script>
+
+        <script type="text/javascript">
+            (function ($) {
+                $(window).load(function () {
+
+                    $("#vegitables-list,#grocery-list").mCustomScrollbar({
+                        setHeight: 300,
+                        theme: "dark-3"
+                    });
+
+                });
+
+                $(window).load(function () {
+
+                    $("#vegitables-list2").mCustomScrollbar({
+                        setHeight: 160,
+                        theme: "dark-3"
+                    });
+
+                });
+
+                $(function () {
+                    $("#drvr_dob,#drvr_dob2").datepicker();
+                });
+
+            })(jQuery);
+        </script>
+
+    </head>
+    <body id="page-top" >
+        <div class="intro">
+            <div class="page-container">
+                <div class="page-content">
+                    <ul class="header-mainbg">
+                        <li class="pull-left"><a href="index.html" class="logo-padd"><img src="images/logo.png" alt="logo" class="img-responsive logoabs" /></a></li>
+                        <li class="pull-right">
+                            <div class="login-user-wraper">
+                                <a href="#" class="hover-new online-logout"><i class="fa fa-sign-out"></i></a>
+                                <a href="#" class="hover-new">Oooo<img src="images/userimage.jpg" alt=""></a>
+                            </div>                  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="main-pagebody">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 padding-left-right">
+                            <div class="online-grids">
+                                <div class="meaning-head">
+                                    <a href="index.html" class="prevpage-link"><img src="images/previous-pageicn.png" alt="" /></a>
+                                    <h1 class="heading-style-font">Sales</h1>
+                                </div>
+                                <div class="tabpan-container">
+                                    <div class="tab-content salestab">
+                                        <div class="container">
+                                            <h2>Sales Report</h2>
+                                            <div class="row">
+                                                <div class="col-md-12 wraperonline">
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="pull-left">
+                                                            <div class="radio radio-info">
+                                                                <input name="gender" id="radio1" value="male" class="css-checkbox" type="radio">
+                                                                <label for="radio1" class="css-label radGroup1">Retailer Customer</label>
+                                                            </div>
+                                                            <div class="radio radio-info">
+                                                                <input name="gender" id="radio2" value="female" class="css-checkbox" type="radio">
+                                                                <label for="radio2" class="css-label radGroup1">Wholesalers Customer</label>
+                                                            </div>
+                                                            <div class="radio radio-info">
+                                                                <input name="gender" id="radio3" value="female" class="css-checkbox" type="radio">
+                                                                <label for="radio3" class="css-label radGroup1">New</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="pull-right">
+                                                                <div class="radio radio-info">
+                                                                    <input name="gender" id="radio4" value="male" class="css-checkbox" type="radio">
+                                                                    <label for="radio4" class="css-label radGroup1">Cash</label>
+                                                                </div>
+                                                                <div class="radio radio-info">
+                                                                    <input name="gender" id="radio5" value="male" class="css-checkbox" type="radio">
+                                                                    <label for="radio5" class="css-label radGroup1">Credit</label>
+                                                                </div>
+                                                                <!--                                                                <div class="custom-checkbox-filed multiple-choice2">
+                                                                                                                                    <div class="squaredTwonew tablecheck">
+                                                                                                                                        <input value="None" id="squaredTwonew2" name="check" type="checkbox">
+                                                                                                                                        <label for="squaredTwonew2"></label>                                       
+                                                                                                                                    </div>
+                                                                                                                                    <p class="chekbxpara">Wholesaler Customer</p>
+                                                                                                                                </div>-->
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 wraperonline">
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                <div class="online_name">
+                                                                    <label>Customer Name</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                <input placeholder="" class="onlineinptbx" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                <div class="online_name">
+                                                                    <label>Address / Reg. No.</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                <input placeholder="" class="onlineinptbx" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                <div class="online_name">
+                                                                    <label>Phone No.</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                <input placeholder="" class="onlineinptbx" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 wraperonline">
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                <div class="online_name">
+                                                                    <label>Shipping By</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                <input placeholder="" class="onlineinptbx" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                <div class="online_name">
+                                                                    <label>Invoice No.</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                <input placeholder="" class="onlineinptbx" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                <div class="online_name">
+                                                                    <label>Challan No.</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                <input placeholder="" class="onlineinptbx" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 wraperonline">
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                                <div class="radio radio-info">
+                                                                    <input name="gender" id="radio6" value="male" class="css-checkbox" type="radio">
+                                                                    <label for="radio6" class="css-label radGroup1">Month Wise</label>
+                                                                </div>
+                                                                <div class="radio radio-info">
+                                                                    <input name="gender" id="radio7" value="female" class="css-checkbox" type="radio">
+                                                                    <label for="radio7" class="css-label radGroup1">Date Wise</label>
+                                                                </div>
+                                                                <div class="salesdate">
+                                                                    <div class="product-form-date">
+                                                                        <input placeholder="" class="onlineinptbx hasDatepicker" id="drvr_dob" type="text">
+                                                                        <img src="images/date-icon.png" class="date-icon">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="salesdate">
+                                                                    <select class="slct_online">
+                                                                        <option value="">-Select-</option>
+                                                                        <option value="">January</option>
+                                                                        <option value="">February</option>
+                                                                        <option value="">March</option>
+                                                                        <option value="">April</option>
+                                                                        <option value="">May</option>
+                                                                        <option value="">June</option>
+                                                                        <option value="">July</option>
+                                                                        <option value="">August</option>
+                                                                        <option value="">September</option>
+                                                                        <option value="">October</option>
+                                                                        <option value="">November</option>
+                                                                        <option value="">December</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 wraperonline">
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <div class="row onlineinptdesign">
+                                                            <div class="col-xs-12 col-sm-5 col-md-5 sale-item">
+                                                                <div class="online_name">
+                                                                    <label>Total Item</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                <input placeholder="" class="onlineinptbx saleinbx" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-8 col-md-8">
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-primary onlinebtn">View</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive examtable font11">
+                                                        <table class="table">
+                                                            <tr class="top-bggreen">
+                                                                <td>Item Name</td>
+                                                                <td>Batch No.</td>
+                                                                <td>Quality</td>
+                                                                <td>Free</td>
+                                                                <td>Expiry</td>
+                                                                <td>MRP</td>
+                                                                <td>Discount</td>
+                                                                <td>Amount</td>
+                                                                <td>Tax</td>
+                                                                <td>Total</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxx</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxx</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxxx</td>
+                                                                <td>Xxx</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="8"></td>
+                                                                <td><strong>Total Bill Amount</strong></td>
+                                                                <td>Xxx</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="8"></td>
+                                                                <td><strong>Paid Amount</strong></td>
+                                                                <td>Xxx</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="8"></td>
+                                                                <td><strong>Balance Amount</strong></td>
+                                                                <td>Xxx</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="page-section">
+                                                        <div class="col-md-12 padding-right">
+                                                            <div class="pager pages item-right pagination-examlist">
+                                                                <div class="item-right">
+                                                                    <div class="pages">                                                                                                                
+                                                                        <ul class="page-numbers">
+                                                                            <li><a class="previus page-numbers" href="#">Prev</a></li>
+                                                                            <li><span class="page-numbers current">1</span></li>
+                                                                            <li><a class="page-numbers" href="#">2</a></li>
+                                                                            <li><a class="next page-numbers" href="#">Next</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="btninline text-left">
+                                                        <button type="button" class="btn btn-primary salebtnbg"><i class="fa fa-floppy-o"></i> Save</button>
+                                                        <button type="button" class="btn btn-primary salebtnbg" data-toggle="modal" data-target="#prdct-dtllst"><i class="fa fa-print"></i> Print Bill</button>
+                                                        <button type="button" class="btn btn-primary salebtnbg"><i class="fa fa-trash"></i> Cancel</button>
+                                                        <button type="button" class="btn btn-primary salebtnbg" data-toggle="modal" data-target="#preview"><i class="fa fa-eye"></i> Preview</button>
+                                                        <button type="button" class="btn btn-primary salebtnbg" data-toggle="modal" data-target="#doubleprint"><i class="fa fa-print"></i> Double Print</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- END SCRIPTS -->
+
+        <!--Modal for product Details-->
+        <div class="modal fade" id="prdct-dtllst" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content purchase-modal">
+                    <div class="modal-header purchase-header">
+                        <h4 class="modal-title">Billing Details</h4>
+                    </div><div class="billing-area">
+                        <div class="col-md-12 col-sm-12 picture-right">
+                            <!--                                     <p>Company Logo</p>-->
+                            <a href="index.html" class="printlogo"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 view-area">
+                            <div class="billing-content">
+                                <label class="billing">Billing Address:</label>
+                                <p class="billing1">Lorem Ipsum</p>
+                                <p>Xxxxxxx, Xxxxxxx, Xxxxxxx,<br> Xxxxxxx Xxxxxxx</p>
+                                <div class="invioce-area">
+                                    <label class="">Invoice #:</label>
+                                    <span>Xxxxxxxxx</span>
+                                </div>
+                                <div class="invioce-area1">
+                                    <label>Date:</label>
+                                    <span>00/00/0000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 view-area">
+                            <div class="billing-content1">
+                                <label>Company Name</label>
+                                <p>Xxxxxxx, Xxxxxxx, Xxxxxxx,<br> Xxxxxxx Xxxxxxx  Xxxxxxx <br> Xxxxxxx Xxxxxxx  Xxxxxxx</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 table-area">
+                            <table class="table">
+                                <tr class="top-bggreen">
+                                    <td>Item Name</td>
+                                    <td>Batch No</td>
+                                    <td>Ouantity</td>
+                                    <td>MRP</td>
+                                    <td>Discount</td>
+                                    <td>Amount</td>
+                                    <td>Tax</td>
+                                    <td>Total</td>
+                                </tr>
+                                <tr>
+                                    <td>Xx01x</td>
+                                    <td>Xx20xx</td>
+                                    <td>Xxxx</td>
+                                    <td>Xxxx</td>
+                                    <td>X00XX</td>
+                                    <td>XXXX</td>
+                                    <td>XXXXX</td>
+                                    <td>Xxxx</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Sub Total</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+
+                                <tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>tax</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Total</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Amount Paid</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <td colspan="6"></td>
+                                <td><strong>Due</strong></td>
+                                <td>000.00</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer purchase-footer">
+
+                        <button type="button" class="btn btn-default purchase-btn" data-dismiss="modal">Print</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Modal for product Details-->
+        <div class="modal fade" id="preview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content purchase-modal">
+                    <div class="modal-header purchase-header">
+                        <h4 class="modal-title">Billing Details</h4>
+                    </div><div class="billing-area">
+                        <div class="col-md-12 col-sm-12 picture-right">
+                            <!--                                     <p>Company Logo</p>-->
+                            <a href="index.html" class="printlogo"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 view-area">
+                            <div class="billing-content">
+                                <label class="billing">Billing Address:</label>
+                                <p class="billing1">Lorem Ipsum</p>
+                                <p>Xxxxxxx, Xxxxxxx, Xxxxxxx,<br> Xxxxxxx Xxxxxxx</p>
+                                <div class="invioce-area">
+                                    <label class="">Invoice #:</label>
+                                    <span>Xxxxxxxxx</span>
+                                </div>
+                                <div class="invioce-area1">
+                                    <label>Date:</label>
+                                    <span>00/00/0000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 view-area">
+                            <div class="billing-content1">
+                                <label>Company Name</label>
+                                <p>Xxxxxxx, Xxxxxxx, Xxxxxxx,<br> Xxxxxxx Xxxxxxx  Xxxxxxx <br> Xxxxxxx Xxxxxxx  Xxxxxxx</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 table-area">
+                            <table class="table">
+                                <tr class="top-bggreen">
+                                    <td>Item Name</td>
+                                    <td>Batch No</td>
+                                    <td>Ouantity</td>
+                                    <td>MRP</td>
+                                    <td>Discount</td>
+                                    <td>Amount</td>
+                                    <td>Tax</td>
+                                    <td>Total</td>
+                                </tr>
+                                <tr>
+                                    <td>Xx01x</td>
+                                    <td>Xx20xx</td>
+                                    <td>Xxxx</td>
+                                    <td>Xxxx</td>
+                                    <td>X00XX</td>
+                                    <td>XXXX</td>
+                                    <td>XXXXX</td>
+                                    <td>Xxxx</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Sub Total</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+
+                                <tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>tax</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Total</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Amount Paid</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <td colspan="6"></td>
+                                <td><strong>Due</strong></td>
+                                <td>000.00</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer purchase-footer">
+
+                        <button type="button" class="btn btn-default purchase-btn" data-dismiss="modal">Print</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Modal for product Details-->
+        <div class="modal fade" id="doubleprint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content purchase-modal">
+                    <div class="modal-header purchase-header">
+                        <h4 class="modal-title">Billing Details</h4>
+                    </div><div class="billing-area">
+                        <div class="col-md-12 col-sm-12 picture-right">
+                            <!--                                     <p>Company Logo</p>-->
+                            <a href="index.html" class="printlogo"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 view-area">
+                            <div class="billing-content">
+                                <label class="billing">Billing Address:</label>
+                                <p class="billing1">Lorem Ipsum</p>
+                                <p>Xxxxxxx, Xxxxxxx, Xxxxxxx,<br> Xxxxxxx Xxxxxxx</p>
+                                <div class="invioce-area">
+                                    <label class="">Invoice #:</label>
+                                    <span>Xxxxxxxxx</span>
+                                </div>
+                                <div class="invioce-area1">
+                                    <label>Date:</label>
+                                    <span>00/00/0000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 view-area">
+                            <div class="billing-content1">
+                                <label>Company Name</label>
+                                <p>Xxxxxxx, Xxxxxxx, Xxxxxxx,<br> Xxxxxxx Xxxxxxx  Xxxxxxx <br> Xxxxxxx Xxxxxxx  Xxxxxxx</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 table-area">
+                            <table class="table">
+                                <tr class="top-bggreen">
+                                    <td>Item Name</td>
+                                    <td>Batch No</td>
+                                    <td>Ouantity</td>
+                                    <td>MRP</td>
+                                    <td>Discount</td>
+                                    <td>Amount</td>
+                                    <td>Tax</td>
+                                    <td>Total</td>
+                                </tr>
+                                <tr>
+                                    <td>Xx01x</td>
+                                    <td>Xx20xx</td>
+                                    <td>Xxxx</td>
+                                    <td>Xxxx</td>
+                                    <td>X00XX</td>
+                                    <td>XXXX</td>
+                                    <td>XXXXX</td>
+                                    <td>Xxxx</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Sub Total</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+
+                                <tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>tax</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Total</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Amount Paid</strong></td>
+                                    <td>000.00</td>
+                                </tr>
+                                <td colspan="6"></td>
+                                <td><strong>Due</strong></td>
+                                <td>000.00</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer purchase-footer">
+
+                        <button type="button" class="btn btn-default purchase-btn" data-dismiss="modal">Print</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            $(function () {
+                $("#accordion, #accordion2").accordion();
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+

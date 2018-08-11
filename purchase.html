@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <title>Online Billing Software</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" id="theme" href="css/jquery.mCustomScrollbar.css"/>
+        <link rel="stylesheet" type="text/css" id="theme" href="css/style.css"/>  
+
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery.mCustomScrollbar.js"></script>
+        <script src="js/jquery-ui.js"></script>
+
+        <script type="text/javascript">
+            (function ($) {
+                $(window).load(function () {
+
+                    $("#vegitables-list,#grocery-list").mCustomScrollbar({
+                        setHeight: 300,
+                        theme: "dark-3"
+                    });
+
+                });
+
+                $(window).load(function () {
+
+                    $("#vegitables-list2").mCustomScrollbar({
+                        setHeight: 160,
+                        theme: "dark-3"
+                    });
+
+                });
+
+                $(function () {
+                    $("#drvr_dob,#drvr_dob2").datepicker();
+                });
+
+            })(jQuery);
+        </script>
+
+    </head>
+    <body id="page-top" >
+        <div class="intro">
+            <div class="page-container">
+                <div class="page-content">
+                    <ul class="header-mainbg">
+                        <li class="pull-left"><a href="index.html" class="logo-padd"><img src="images/logo.png" alt="logo" class="img-responsive logoabs" /></a></li>
+                        <li class="pull-right">
+                            <div class="login-user-wraper">
+                                <a href="#" class="hover-new online-logout"><i class="fa fa-sign-out"></i></a>
+                                <a href="#" class="hover-new">Oooo<img src="images/userimage.jpg" alt=""></a>
+                            </div>                  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="main-pagebody">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 padding-left-right">
+                            <div class="online-grids">
+                                <div class="meaning-head">
+                                    <a href="index.html" class="prevpage-link"><img src="images/previous-pageicn.png" alt="" /></a>
+                                    <h1 class="heading-style-font">Purchase</h1>
+                                </div>
+                                <div class="tabpan-container">
+                                    <ul class="nav nav-tabs online-tab" role="tablist">
+                                        <li role="presentation" class="active"><a href="#produst" aria-controls="produst" role="tab" data-toggle="tab">Product Entry</a></li>
+                                        <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Product Form</a></li>
+                                        <li role="presentation"><a href="#pur-list" aria-controls="pur-list" role="tab" data-toggle="tab">Purchase List</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="produst">
+                                            <div class="container">
+                                                <h2>Product Entry</h2>
+                                                <div class="row">
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Product Name</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Product Type</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <select class="slct_online">
+                                                                        <option value="">-Select-</option>
+                                                                        <option value="">Vegetables</option>
+                                                                        <option value="">Grocery</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Product Code</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-primary onlinebtn">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table-responsive examtable">
+                                                            <table class="table">
+                                                                <tr class="top-bggreen">
+                                                                    <td>Sr No.</td>
+                                                                    <td class="text-center">Product Name</td>
+                                                                    <td class="text-center">Product Type</td>
+                                                                    <td class="text-center">Product Code</td>
+                                                                    <td class="text-center">Edit</td>
+                                                                    <td class="text-center">Delete</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td class="text-center">XXXXXXXX</td>
+                                                                    <td class="text-center">Xxxxx</td>
+                                                                    <td class="text-center">Xxxx</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td class="text-center">XXXXXXXX</td>
+                                                                    <td class="text-center">Xxxxx</td>
+                                                                    <td class="text-center">Xxxx</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td class="text-center">XXXXXXXX</td>
+                                                                    <td class="text-center">Xxxxx</td>
+                                                                    <td class="text-center">Xxxx</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="page-section">
+                                                            <div class="col-md-12 padding-right">
+                                                                <div class="pager pages item-right pagination-examlist">
+                                                                    <div class="item-right">
+                                                                        <div class="pages">                                                                                                                
+                                                                            <ul class="page-numbers">
+                                                                                <li><a class="previus page-numbers" href="#">Prev</a></li>
+                                                                                <li><span class="page-numbers current">1</span></li>
+                                                                                <li><a class="page-numbers" href="#">2</a></li>
+                                                                                <li><a class="next page-numbers" href="#">Next</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="home">
+                                            <div class="container">
+                                                <h2>Purchase Entry Form</h2>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="col-xs-12 col-sm-4 col-md-3 prdctitems-list padding-left-right">
+                                                            <div id="accordion" class="prdlist-wrapper">
+                                                                <h3 class="veg-head"><img src="images/vegicon.png" alt="">Vegetables</h3>
+                                                                <div  id="vegitables-list">
+                                                                    <ul>
+                                                                        <li>Onion</li>
+                                                                        <li>Potato</li>
+                                                                        <li>Cauliflower</li>
+                                                                        <li>Cucumber </li>
+                                                                        <li>Green chilli</li>
+                                                                        <li>Garlic </li>
+                                                                        <li>Jackfruit </li>
+                                                                        <li>Natal Plum</li>
+                                                                        <li>Peas </li>
+                                                                        <li>Tomato</li>
+                                                                        <li>Onion</li>
+                                                                        <li>Potato</li>
+                                                                        <li>Cauliflower</li>
+                                                                        <li>Cucumber </li>
+                                                                        <li>Green chilli</li>
+                                                                        <li>Garlic </li>
+                                                                        <li>Jackfruit </li>
+                                                                        <li>Natal Plum</li>
+                                                                        <li>Peas </li>
+                                                                        <li>Tomato</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <h3 class="groc-head"><img src="images/groceryicon.png" alt="">Grocery</h3>
+                                                                <div id="grocery-list">
+                                                                    <ul>
+                                                                        <li>Milk</li>
+                                                                        <li>Clinic Plus Shampo</li>
+                                                                        <li>Channa dhal</li>
+                                                                        <li>Mug ni dhal</li>
+                                                                        <li>Masoor ni dhal</li>
+                                                                        <li>Khus-Khus</li>
+                                                                        <li>Rai</li>
+                                                                        <li>Jeera</li>
+                                                                        <li>Haldee</li>
+                                                                        <li>Saaboodaana</li>
+                                                                        <li>Salt</li>
+                                                                        <li>Sugar</li>
+                                                                        <li>Kaju</li>
+                                                                        <li>Kisamisa</li>
+                                                                        <li>Egg</li>
+                                                                        <li>Givinbhog Rice</li>
+                                                                        <li>India Gate Rice</li>
+                                                                        <li>Basmati Rice</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-8 col-md-9">
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Vendor Name</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Date</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <div class="product-form-date">
+                                                                                <input placeholder="" class="onlineinptbx" type="text" id="drvr_dob" />
+                                                                                <img src="images/date-icon.png" class="date-icon" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Product Name</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Product Code</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Purchase Type</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Value</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <select class="slct_online">
+                                                                                <option value="">-Select-</option>
+                                                                                <option value="">Pkd</option>
+                                                                                <option value="">kg.</option>
+                                                                                <option value="">Pcs</option>
+                                                                                <option value="">Grms</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Unit of Measure</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Rate (Rupees)</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="" class="onlineinptbx rateinbx" type="text">
+                                                                            <div class="perrate">
+                                                                                <label>Per</label>
+                                                                                <input placeholder="" class="onlineinptbx perrateinpt" type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Unit of Measure</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="text-right">
+                                                                    <button type="button" class="btn btn-primary onlinebtn">Save</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="table-responsive examtable">
+                                                                        <table class="table">
+                                                                            <tr class="top-bggreen">
+                                                                                <td>Date</td>
+                                                                                <td>Vendor Name</td>
+                                                                                <td>Product</td>
+                                                                                <td>Code</td>
+                                                                                <td>Qty.</td>
+                                                                                <td>Unit Price</td>
+                                                                                <td>Total</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>10-08-2016</td>
+                                                                                <td>Xxxxx</td>
+                                                                                <td>XXxxxX</td>
+                                                                                <td>Xxx01</td>
+                                                                                <td>Xxxxx</td>
+                                                                                <td>1-pkd</td>
+                                                                                <td>Xxxx</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="pur-list">
+                                            <div class="container">
+                                                <h2>Product List</h2>
+                                                <div class="row">
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Date</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <div class="product-form-date">
+                                                                        <input placeholder="" class="onlineinptbx" type="text" id="drvr_dob2" />
+                                                                        <img src="images/date-icon.png" class="date-icon" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Product Type</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <select class="slct_online">
+                                                                        <option value="">-Select-</option>
+                                                                        <option value="">Vegetables</option>
+                                                                        <option value="">Grocery</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Product Name</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-primary onlinebtn">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table-responsive examtable">
+                                                            <table class="table">
+                                                                <tr class="top-bggreen">
+                                                                    <td>Sr No.</td>
+                                                                    <td>Date</td>
+                                                                    <td>Vendor Name</td>
+                                                                    <td class="productdrop dropdown">Product <span class="caret dropdown-toggle" data-toggle="dropdown"></span>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><a href="#">Grocery</a></li>
+                                                                            <li><a href="#">Vegetables</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>Qty.</td>
+                                                                    <td>Total</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>10-08-2016</td>
+                                                                    <td>Xxxxx</td>
+                                                                    <td><button type="button" class="nobg-nobrdr" data-toggle="modal" data-target="#prdct-dtllst"><img src="images/package.png" alt=""></button></td>
+                                                                    <td>200Kg. and 5Pkd</td>
+                                                                    <td>Xxxx</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>10-08-2016</td>
+                                                                    <td>Xxxxx</td>
+                                                                    <td><button type="button" class="nobg-nobrdr" data-toggle="modal" data-target="#prdct-dtllst"><img src="images/package.png" alt=""></button></td>
+                                                                    <td>200Kg. and 5Pkd</td>
+                                                                    <td>Xxxx</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>10-08-2016</td>
+                                                                    <td>Xxxxx</td>
+                                                                    <td><button type="button" class="nobg-nobrdr" data-toggle="modal" data-target="#prdct-dtllst"><img src="images/package.png" alt=""></button></td>
+                                                                    <td>200Kg. and 5Pkd</td>
+                                                                    <td>Xxxx</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row grand-margin">
+                                                    <div class="col-md-12 wraperonline padding-left-right">
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                                                    <div class="online_name">
+                                                                        <label class="text-left">Special Instractions</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-8 col-md-8 padding-left">
+                                                                    <textarea class="online_name2"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                                                    <div class="online_name">
+                                                                        <label>Grand Total</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-8 col-md-8 padding-left">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- END SCRIPTS -->
+
+        <!--Modal for product Details-->
+        <div class="modal fade" id="prdct-dtllst" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content purchase-modal">
+                    <div class="modal-header purchase-header">
+                        <!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                        <h4 class="modal-title">Rajiv Kumar Product List</h4>
+                    </div>
+                    <div id="accordion2" class="modal-body purchase-body">
+                        <div class="table-responsive examtable modal-table" id="vegitables-list2">
+                            <table class="table">
+                                <tr class="top-bggreen">
+                                    <td>Sr No.</td>
+                                    <td>Date</td>
+                                    <td>Product Type</td>
+                                    <td>Product</td>
+                                    <td>Product Code</td>
+                                    <td>Qty.</td>
+                                    <td>MRP(Rs.)</td>
+                                    <td>Total(Rs.)</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>XX-XX-XX16</td>
+                                    <td>Vegitable</td>
+                                    <td>Carrot</td>
+                                    <td>50Kg.</td>
+                                    <td>Qty.</td>
+                                    <td>20</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Total</strong></td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Paid</strong></td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6"></td>
+                                    <td><strong>Due</strong></td>
+                                    <td>500</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer purchase-footer">
+                        <button type="button" class="btn btn-default purchase-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $("#accordion, #accordion2").accordion();
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+

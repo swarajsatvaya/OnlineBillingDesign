@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <title>Online Billing Software</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" id="theme" href="css/jquery.mCustomScrollbar.css"/>
+        <link rel="stylesheet" type="text/css" id="theme" href="css/style.css"/>  
+
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery.mCustomScrollbar.js"></script>
+        <script src="js/jquery-ui.js"></script>
+
+        <script type="text/javascript">
+            (function ($) {
+                $(function () {
+                    $("#drvr_dob,#drvr_dob2").datepicker();
+                });
+
+            })(jQuery);
+        </script>
+
+    </head>
+    <body id="page-top" >
+        <div class="intro">
+            <div class="page-container">
+                <div class="page-content">
+                    <ul class="header-mainbg">
+                        <li class="pull-left"><a href="index.html" class="logo-padd"><img src="images/logo.png" alt="logo" class="img-responsive logoabs" /></a></li>
+                        <li class="pull-right">
+                            <div class="login-user-wraper">
+                                <a href="#" class="hover-new online-logout"><i class="fa fa-sign-out"></i></a>
+                                <a href="#" class="hover-new">Oooo<img src="images/userimage.jpg" alt=""></a>
+                            </div>                  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="main-pagebody">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 padding-left-right">
+                            <div class="online-grids">
+                                <div class="meaning-head">
+                                    <a href="index.html" class="prevpage-link"><img src="images/previous-pageicn.png" alt="" /></a>
+                                    <h1 class="heading-style-font">Employee Management</h1>
+                                </div>
+                                <div class="tabpan-container">
+                                    <ul class="nav nav-tabs online-tab" role="tablist">
+                                        <li role="presentation" class="active"><a href="#produst" aria-controls="produst" role="tab" data-toggle="tab">Create New Employee</a></li>
+                                        <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">View Employee</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane  active" id="produst">
+                                            <div class="container">
+                                                <h2>Employee Entry</h2>
+                                                <div class="row">
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Employee ID</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Employee Name</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Mobile No</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Email ID</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>D.O.B.</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <div class="product-form-date">
+                                                                        <input placeholder="" class="onlineinptbx" type="text" id="drvr_dob" />
+                                                                        <img src="images/date-icon.png" class="date-icon" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Sex</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Employee Address</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>City</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>State</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Employee A/C No</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Basic Salary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Net Salary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Image</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <div class="fileUpload btn btn-primary transiction-effect">
+                                                                        <input class="upload" type="file">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-primary onlinebtn empbtn">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table-responsive examtable font11">
+                                                            <table class="table">
+                                                                <tr class="top-bggreen">
+                                                                    <td>Emp. ID</td>
+                                                                    <td>Emp. Name</td>
+                                                                    <td>Mob. No</td>
+                                                                    <td>Email</td>
+                                                                    <td>D.O.B.</td>
+                                                                    <td>Sex</td>
+                                                                    <td>Emp. Address</td>
+                                                                    <td>Emp. A/C No</td>
+                                                                    <td>Basic Salary</td>
+                                                                    <td>Net Salary</td>
+                                                                    <td>Edit</td>
+                                                                    <td>Delete</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Xx01x</td>
+                                                                    <td>Xxxx</td>
+                                                                    <td>XXX2222XXX</td>
+                                                                    <td>Xxx@demo.com</td>
+                                                                    <td>XX-XX-XX</td>
+                                                                    <td>M</td>
+                                                                    <td>Xxxx,Xxxx,Xxx</td>
+                                                                    <td>X00XXXX001XX</td>
+                                                                    <td>X0,XXX</td>
+                                                                    <td>X2,xx</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Xx02x</td>
+                                                                    <td>Xxxx</td>
+                                                                    <td>XXX2222XXX</td>
+                                                                    <td>Xxx@demo.com</td>
+                                                                    <td>XX-XX-XX</td>
+                                                                    <td>M</td>
+                                                                    <td>Xxxx,Xxxx,Xxx</td>
+                                                                    <td>X00XXXX001XX</td>
+                                                                    <td>X0,XXX</td>
+                                                                    <td>X2,xx</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Xx03x</td>
+                                                                    <td>Xxxx</td>
+                                                                    <td>XXX2222XXX</td>
+                                                                    <td>Xxx@demo.com</td>
+                                                                    <td>XX-XX-XX</td>
+                                                                    <td>F</td>
+                                                                    <td>Xxxx,Xxxx,Xxx</td>
+                                                                    <td>X00XXXX001XX</td>
+                                                                    <td>X0,XXX</td>
+                                                                    <td>X2,xx</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="page-section">
+                                                            <div class="col-md-12 padding-right">
+                                                                <div class="pager pages item-right pagination-examlist">
+                                                                    <div class="item-right">
+                                                                        <div class="pages">                                                                                                                
+                                                                            <ul class="page-numbers">
+                                                                                <li><a class="previus page-numbers" href="#">Prev</a></li>
+                                                                                <li><span class="page-numbers current">1</span></li>
+                                                                                <li><a class="page-numbers" href="#">2</a></li>
+                                                                                <li><a class="next page-numbers" href="#">Next</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="home">
+                                            <div class="container">
+                                                <h2>Employee Details</h2>
+                                                <div class="row">
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Employee ID</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Position</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                                                    <div class="online_name">
+                                                                        <label>Sex</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-primary onlinebtn empbtn">OK</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table-responsive examtable font11">
+                                                            <table class="table">
+                                                                <tr class="top-bggreen">
+                                                                    <td>Emp. ID</td>
+                                                                    <td>Emp. Name</td>
+                                                                    <td>Mob. No</td>
+                                                                    <td>Email</td>
+                                                                    <td>D.O.B.</td>
+                                                                    <td>Sex</td>
+                                                                    <td>Emp. A/C No</td>
+                                                                    <td>Net Salary</td>
+                                                                    <td>View</td>
+                                                                    <td>Delete</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Xx01x</td>
+                                                                    <td>Xxxx</td>
+                                                                    <td>XXX2222XXX</td>
+                                                                    <td>Xxx@demo.com</td>
+                                                                    <td>XX-XX-XX</td>
+                                                                    <td>M</td>
+                                                                    <td>X00XXXX001XX</td>
+                                                                    <td>X2,xx</td>
+                                                                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#prdct-dtllst"><img src="images/view-icons.png" alt="View" /></a></td>
+                                                                    <td class="text-center"><a href="#"><img src="images/delete-icons.png" alt="Delete" /></a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Xx02x</td>
+                                                                    <td>Xxxx</td>
+                                                                    <td>XXX2222XXX</td>
+                                                                    <td>Xxx@demo.com</td>
+                                                                    <td>XX-XX-XX</td>
+                                                                    <td>M</td>
+                                                                    <td>X00XXXX001XX</td>
+                                                                    <td>X2,xx</td>
+                                                                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#prdct-dtllst"><img src="images/view-icons.png" alt="View" /></a></td>
+                                                                    <td class="text-center"><a href="#"><img src="images/delete-icons.png" alt="Delete" /></a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Xx03x</td>
+                                                                    <td>Xxxx</td>
+                                                                    <td>XXX2222XXX</td>
+                                                                    <td>Xxx@demo.com</td>
+                                                                    <td>XX-XX-XX</td>
+                                                                    <td>F</td>
+                                                                    <td>X00XXXX001XX</td>
+                                                                    <td>X2,xx</td>
+                                                                    <td class="text-center"><a href="#" data-toggle="modal" data-target="#prdct-dtllst"><img src="images/view-icons.png" alt="View" /></a></td>
+                                                                    <td class="text-center"><a href="#"><img src="images/delete-icons.png" alt="Delete" /></a></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="page-section">
+                                                            <div class="col-md-12 padding-right">
+                                                                <div class="pager pages item-right pagination-examlist">
+                                                                    <div class="item-right">
+                                                                        <div class="pages">                                                                                                                
+                                                                            <ul class="page-numbers">
+                                                                                <li><a class="previus page-numbers" href="#">Prev</a></li>
+                                                                                <li><span class="page-numbers current">1</span></li>
+                                                                                <li><a class="page-numbers" href="#">2</a></li>
+                                                                                <li><a class="next page-numbers" href="#">Next</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- END SCRIPTS -->
+
+        <!--Modal for product Details-->
+        <div class="modal fade" id="prdct-dtllst" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content purchase-modal">
+                    <div class="modal-header purchase-header">
+                        <h4 class="modal-title">Employee Details</h4>
+                    </div>
+                    <div id="accordion2" class="modal-body purchase-body">
+                        <div class="table-responsive examtable modal-table" id="vegitables-list2">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="col-md-6 col-sm6 picture">
+                                    <img src="images/photo.jpg" />
+                                </div>
+                                 <div class="col-md-6 col-sm6 picture-right">
+                                     <a href="index.html" class="printlogo"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+                                </div>
+                                <div class="col-md-12 col-sm12 view-area">
+                                    <div class="view-content">
+                                    <label>Employee ID:</label>
+                                    <span>XXXX 00XXXXXX</span>
+                                    </div>
+                                     <div class="view-content">
+                                    <label>Employee Name:</label>
+                                    <span>Xxxxxxx Xxxxxxx</span>
+                                    </div>
+                                    <div class="view-content">
+                                    <label>Address:</label>
+                                    <span>Xxxx, Xxxxxxx, Xxxxxx, Xxxx Xxxxxxx Xxxxxx</span>
+                                    </div>
+                                     <div class="view-content">
+                                    <label>Mobile No:</label>
+                                    <span>99xxxxxxxx</span>
+                                    </div>
+                                     <div class="view-content">
+                                    <label>Email Id:</label>
+                                    <span>example@demo.com</span>
+                                    </div>
+                                     <div class="view-content">
+                                    <label>Date Of Birth:</label>
+                                    <span>00/00/0000</span>
+                                    </div>
+                                     <div class="view-content">
+                                    <label>Sex:</label>
+                                    <span>M</span>
+                                    </div>
+                                     <div class="view-content">
+                                    <label>Employee A/C No:</label>
+                                    <span>999xxxxxxxx</span>
+                                    </div>
+                                     <div class="view-content">
+                                    <label>Net Salary</label>
+                                    <span>Xxxxxxxxx xxx</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer purchase-footer">
+                         
+                        <button type="button" class="btn btn-default purchase-btn" data-dismiss="modal">Print</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $("#accordion, #accordion2").accordion();
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+

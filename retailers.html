@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <title>Online Billing Software</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" id="theme" href="css/jquery.mCustomScrollbar.css"/>
+        <link rel="stylesheet" type="text/css" id="theme" href="css/style.css"/>  
+
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery.mCustomScrollbar.js"></script>
+
+        <script type="text/javascript">
+            (function ($) {
+                $(window).load(function () {
+
+                    $("#vegitables-list,#grocery-list").mCustomScrollbar({
+                        setHeight: 300,
+                        theme: "dark-3"
+                    });
+
+                });
+            })(jQuery);
+        </script>
+
+    </head>
+    <body id="page-top" >
+        <div class="intro">
+            <div class="page-container">
+                <div class="page-content">
+                    <ul class="header-mainbg">
+                        <li class="pull-left"><a href="index.html" class="logo-padd"><img src="images/logo.png" alt="logo" class="img-responsive logoabs" /></a></li>
+                        <li class="pull-right">
+                            <div class="login-user-wraper">
+                                <a href="#" class="hover-new online-logout"><i class="fa fa-sign-out"></i></a>
+                                <a href="#" class="hover-new">Oooo<img src="images/userimage.jpg" alt=""></a>
+                            </div>                  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="main-pagebody">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 padding-left-right">
+                            <div class="online-grids">
+                                <div class="meaning-head">
+                                    <a href="index.html" class="prevpage-link"><img src="images/previous-pageicn.png" alt="" /></a>
+                                    <h1 class="heading-style-font">Retailers</h1>
+                                </div>
+                                <div class="tabpan-container">
+                                    <ul class="nav nav-tabs online-tab" role="tablist">
+                                        <li role="presentation" class="active"><a href="#rtlinfomtn" aria-controls="rtlinfomtn" role="tab" data-toggle="tab">Create Retailers</a></li>
+                                        <li role="presentation"><a href="#rtlinfdetl" aria-controls="rtlinfdetl" role="tab" data-toggle="tab">View Retailers Details</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="rtlinfomtn">
+                                            <div class="container">
+                                                <h2>Create Retailers</h2>
+                                                <div class="row">
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                    <div class="online_name">
+                                                                        <label>Retailer’s Name</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                    <div class="online_name">
+                                                                        <label>Retailer’s Co.</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                    <div class="online_name">
+                                                                        <label>Email</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="email">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                    <div class="online_name">
+                                                                        <label>Contact No</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                    <div class="online_name">
+                                                                        <label>Licence No.</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                    <div class="online_name">
+                                                                        <label>City</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                    <div class="online_name">
+                                                                        <label>Address</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <textarea placeholder="" class="onlineinptbx"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                                            <div class="row onlineinptdesign">
+                                                                <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                    <div class="online_name">
+                                                                        <label>Pin Code</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                    <input placeholder="" class="onlineinptbx" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-12 wraperonline">
+                                                        <form class="searching-panel">
+                                                            <div class="search-sectn">
+                                                                <input id="search_cust" class="searchingborder" type="text">
+                                                                <input name="" value=" " type="submit">
+                                                            </div>
+                                                        </form>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-primary onlinebtn">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table-responsive examtable">
+                                                            <table class="table">
+                                                                <tr class="top-bggreen">
+                                                                    <td>Sr No.</td>
+                                                                    <td class="text-center">Retailer’s Name</td>
+                                                                    <td class="text-center">Retailer’s Co.</td>
+                                                                    <td class="text-center">Email</td>
+                                                                    <td class="text-center">Contact No.</td>
+                                                                    <td class="text-center">Licence No.</td>
+                                                                    <td class="text-center">City</td>
+                                                                    <td class="text-center">Address</td>
+                                                                    <td class="text-center">Edit</td>
+                                                                    <td class="text-center">Delete</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td class="text-center">XX Xsxsdsad</td>
+                                                                    <td class="text-center">XXX Co.</td>
+                                                                    <td class="text-center">Xxxx@gmail.com</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">Kolkata</td>
+                                                                    <td class="text-center">XX XXxaxasxasd scsdf</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td class="text-center">XX Xsxsdsad</td>
+                                                                    <td class="text-center">XXX Co.</td>
+                                                                    <td class="text-center">Xxxx@gmail.com</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">Kolkata</td>
+                                                                    <td class="text-center">XX XXxaxasxasd scsdf</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td class="text-center">XX Xsxsdsad</td>
+                                                                    <td class="text-center">XXX Co.</td>
+                                                                    <td class="text-center">Xxxx@gmail.com</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">Kolkata</td>
+                                                                    <td class="text-center">XX XXxaxasxasd scsdf</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td class="text-center">XX Xsxsdsad</td>
+                                                                    <td class="text-center">XXX Co.</td>
+                                                                    <td class="text-center">Xxxx@gmail.com</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">Kolkata</td>
+                                                                    <td class="text-center">XX XXxaxasxasd scsdf</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>5</td>
+                                                                    <td class="text-center">XX Xsxsdsad</td>
+                                                                    <td class="text-center">XXX Co.</td>
+                                                                    <td class="text-center">Xxxx@gmail.com</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">XXXxx</td>
+                                                                    <td class="text-center">Kolkata</td>
+                                                                    <td class="text-center">XX XXxaxasxasd scsdf</td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/edit-icons.png" alt="Edit" /></button></td>
+                                                                    <td class="text-center"><button class="iconbtn" type="button"><img src="images/delete-icons.png" alt="Delete" /></button></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="page-section">
+                                                            <div class="col-md-12 padding-right">
+                                                                <div class="pager pages item-right pagination-examlist">
+                                                                    <div class="item-right">
+                                                                        <div class="pages">                                                                                                                
+                                                                            <ul class="page-numbers">
+                                                                                <li><a class="previus page-numbers" href="#">Prev</a></li>
+                                                                                <li><span class="page-numbers current">1</span></li>
+                                                                                <li><a class="page-numbers" href="#">2</a></li>
+                                                                                <li><a class="next page-numbers" href="#">Next</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="rtlinfdetl">
+                                            <div class="container">
+                                                <h2>Individual Retailers Details</h2>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="col-xs-12 col-sm-4 col-md-3 prdctitems-list padding-left-right">
+                                                            <div id="accordion" class="prdlist-wrapper">
+                                                                <h3 class="veg-head"><img src="images/customer-clr.png" alt="">Retailers List</h3>
+                                                                <div  id="vegitables-list">
+                                                                    <ul>
+                                                                        <li>Arvind Group</li>
+                                                                        <li>Grocery Retail Ltd.</li>
+                                                                        <li>Jony Grocery</li>
+                                                                        <li>Raj &AMP; Raj Co.</li>
+                                                                        <li>Arvind Group</li>
+                                                                        <li class="activertl">Grocery CCR Ltd.</li>
+                                                                        <li>Jony Grocery</li>
+                                                                        <li>Cucumber Co.</li>
+                                                                        <li>Arvind Group</li>
+                                                                        <li>Grocery Retail Ltd.</li>
+                                                                        <li>Jony Grocery</li>
+                                                                        <li>Cucumber Co.</li>
+                                                                        <li>Arvind Group</li>
+                                                                        <li>Grocery Retail Ltd.</li>
+                                                                        <li>Jony Grocery</li>
+                                                                        <li>Cucumber Co.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-8 col-md-9">
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Retailer&CloseCurlyQuote;s Name</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="Ravi Yadav" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Retailer&CloseCurlyQuote;s Co.</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="Grocery CCR Ltd." class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Email</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="ravi@groceryccr.com" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Contact No</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="+91 9251458XXX" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Licence No.</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="XX-XX012XX" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>City</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="Burdwan" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Address</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <textarea placeholder="Vill. Purba Shahapur, P.O. Purba Satgachia via Kalna" class="onlineinptbx" rows="2"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                                    <div class="row onlineinptdesign">
+                                                                        <div class="col-xs-12 col-sm-5 col-md-5 textalign-paddng">
+                                                                            <div class="online_name">
+                                                                                <label>Pin Code</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-7 col-md-7 padding-right">
+                                                                            <input placeholder="713143" class="onlineinptbx" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 wraperonline padding-left-right">
+                                                                <div class="text-right">
+                                                                    <button type="button" class="btn btn-primary onlinebtn">Ok</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="table-responsive examtable wholeslers">
+                                                                        <table class="table">
+                                                                            <tr class="top-bggreen">
+                                                                                <td>Name</td>
+                                                                                <td>Retailer’s Co.</td>
+                                                                                <td>Email</td>
+                                                                                <td>Contact NO.</td>
+                                                                                <td>Licence No.</td>
+                                                                                <td>City</td>
+                                                                                <td>Address</td>
+                                                                                <td>Dr./Cr.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">XX Xsxsdsad</td>
+                                                                                <td class="text-center">XXX Co.</td>
+                                                                                <td class="text-center">Xxxx@gmail.com</td>
+                                                                                <td class="text-center">XXXxx</td>
+                                                                                <td class="text-center">XXXxx</td>
+                                                                                <td class="text-center">Kolkata</td>
+                                                                                <td class="text-center">XX XXxaxasxasd scsdf</td>
+                                                                                <td><button type="button" class="debtcredit"><img src="images/credit-icon.png" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- END SCRIPTS -->
+
+
+        <script>
+            $(function () {
+                $("#accordion").accordion();
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
